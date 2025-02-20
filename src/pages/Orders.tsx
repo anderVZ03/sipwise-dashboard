@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import { OrdersTable } from "@/components/orders/OrdersTable";
@@ -65,7 +64,7 @@ const mockOrders = [
     status: "cancelled",
     date: "2024-03-14",
   },
-] as const;
+];
 
 const Orders = () => {
   const [searchTerm, setSearchTerm] = useState("");
