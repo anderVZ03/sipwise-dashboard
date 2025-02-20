@@ -5,7 +5,7 @@ import { OrderDetails } from "@/components/orders/OrderDetails";
 import { Search, Filter } from "lucide-react";
 
 // Mock data for orders
-const mockOrders = [
+const mockOrders: Order[] = [
   {
     id: 1,
     customer: {
@@ -18,7 +18,7 @@ const mockOrders = [
       { id: 2, name: "Ron Zacapa XO", quantity: 1, price: 120000 },
     ],
     total: 290000,
-    status: "pending",
+    status: "pending" as const,
     date: "2024-03-15",
   },
   {
@@ -33,7 +33,7 @@ const mockOrders = [
       { id: 4, name: "Gin Hendrick's", quantity: 2, price: 89000 },
     ],
     total: 273000,
-    status: "completed",
+    status: "completed" as const,
     date: "2024-03-15",
   },
   {
@@ -47,7 +47,7 @@ const mockOrders = [
       { id: 5, name: "Tequila Don Julio 1942", quantity: 1, price: 150000 },
     ],
     total: 150000,
-    status: "processing",
+    status: "processing" as const,
     date: "2024-03-14",
   },
   {
@@ -61,7 +61,7 @@ const mockOrders = [
       { id: 6, name: "Champagne Moët & Chandon", quantity: 2, price: 130000 },
     ],
     total: 260000,
-    status: "cancelled",
+    status: "cancelled" as const,
     date: "2024-03-14",
   },
 ];

@@ -1,7 +1,7 @@
 
-import { Menu, Search, User } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import { NotificationsPopover } from '../notifications/NotificationsPopover';
-import { Button } from '../ui/button';
+import { UserPopover } from '../user/UserPopover';
 
 interface NavbarProps {
   onMenuClick: () => void;
@@ -31,9 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
         </div>
         <div className="flex items-center space-x-4">
           <NotificationsPopover />
-          <Button variant="ghost" size="icon">
-            <User className="h-5 w-5" />
-          </Button>
+          <UserPopover />
         </div>
       </div>
     </nav>
